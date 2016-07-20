@@ -428,7 +428,7 @@ if (num.charset == 1) {
 				}
 				else {
 				found_taxa <- c(found_taxa,getName(current_metamasked)[k])
-				found_sequences[length(found_taxa)] <- c(rep("-",current_metamasked_length),getSequence(current_metamasked)[[k]])
+				found_sequences[[length(found_taxa)]] <- c(rep("-",current_metamasked_length),getSequence(current_metamasked)[[k]])
 				}
 			}
 		current_metamasked_length <- current_metamasked_length+length(getSequence(current_metamasked)[[1]])
